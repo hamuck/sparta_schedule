@@ -236,3 +236,10 @@
 |---|---|---|---|
 | scheduleId|Integer| 필수  | 일정 고유 번호  |
 | password  | String  | 필수  | 일정 비밀 번호  | 
+
+---
+
+# ERD
+![스크린샷 2024-10-30 오후 7 32 03](https://github.com/user-attachments/assets/97626e70-fc31-41af-8e90-7551e54df97b)
+
+
