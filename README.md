@@ -46,6 +46,18 @@
 | title | String | 필수 | 일정 제목|
 | content | String | 선택 | 일정 상세 내용|
 
+**Request**
+```json
+{
+"scheduleId" : "1"
+}
+```
+
+|  파라미터 |타입   | 필수여부  | 설명  |
+|---|---|---|---|
+| scheduleId|Integer| 필수  | 일정 고유 번호  |
+
+
 ---
 
 ## 일정 목록 조회
