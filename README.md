@@ -240,6 +240,6 @@
 ---
 
 # ERD
-![스크린샷 2024-10-30 오후 7 32 03](https://github.com/user-attachments/assets/97626e70-fc31-41af-8e90-7551e54df97b)
 
+<img width="961" alt="스크린샷 2024-10-31 오전 10 37 33" src="https://github.com/user-attachments/assets/17107fec-eba7-40a0-9518-565340aab83d">
 
