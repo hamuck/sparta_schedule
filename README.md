@@ -23,7 +23,7 @@
 ```json
 {
 "scheduleId" : "1",
-"password" : "비밀번호",
+"schedulePassword" : "비밀번호",
 "username" : "작성자 명",
 "createAt": "2024-10-24T14:55:00Z",
 "updateAt": "2024-10-25T09:30:00Z",
@@ -39,7 +39,7 @@
 |  파라미터 |타입   | 필수여부  | 설명  |
 |---|---|---|---|
 | scheduleId|Integer| 필수  | 일정 고유 번호  |
-| password  | String  | 필수  | 일정 비밀 번호  | 
+| schedulePassword  | String  | 필수  | 일정 비밀 번호  | 
 |  username | String  | 필수  |  일정 작성자 이름 |
 |  createAt | String  | 필수  | 작성 날짜  |
 | updateAt | String | 필수 | 수정 날짜 |
@@ -179,7 +179,7 @@
 ```json
 {
 "scheduleId" : "1",
-"password" : "비밀번호",
+"schedulePassword" : "비밀번호",
 "username" : "작성자 명",
 "updateAt": "2024-10-25T09:30:00Z",
 "title" : "제목",
@@ -195,7 +195,7 @@
 |  파라미터 |타입   | 필수여부  | 설명  |
 |---|---|---|---|
 | scheduleId|Integer| 필수  | 일정 고유 번호  |
-| password  | String  | 필수  | 일정 비밀 번호  | 
+| schedulePassword  | String  | 필수  | 일정 비밀 번호  | 
 |  username | String  | 필수  |  일정 작성자 이름 |
 | updateAt | String | 필수 | 수정 날짜 |
 | title | String | 필수 | 일정 제목|
@@ -223,7 +223,7 @@
 ```json
 {
 "scheduleId" : "1",
-"password" : "비밀번호"
+"schedulePassword" : "비밀번호"
 }
 ```
 
@@ -235,11 +235,12 @@
 |  파라미터 |타입   | 필수여부  | 설명  |
 |---|---|---|---|
 | scheduleId|Integer| 필수  | 일정 고유 번호  |
-| password  | String  | 필수  | 일정 비밀 번호  | 
+| schedulePassword  | String  | 필수  | 일정 비밀 번호  | 
 
 ---
 
 # ERD
 
-<img width="961" alt="스크린샷 2024-10-31 오전 10 37 33" src="https://github.com/user-attachments/assets/17107fec-eba7-40a0-9518-565340aab83d">
+![스크린샷 2024-10-31 오전 10 42 18](https://github.com/user-attachments/assets/febcf2a7-e59c-4ea4-a4b6-01d57cc86672)
+
 
