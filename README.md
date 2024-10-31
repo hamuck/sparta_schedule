@@ -41,8 +41,8 @@
 | scheduleId|Integer| 필수  | 일정 고유 번호  |
 | password  | String  | 필수  | 일정 비밀 번호  | 
 |  username | String  | 필수  |  일정 작성자 이름 |
-|  createAt | DateTime  | 필수  | 작성 날짜  |
-| updateAt | DateTime | 필수 | 수정 날짜 |
+|  createAt | String  | 필수  | 작성 날짜  |
+| updateAt | String | 필수 | 수정 날짜 |
 | title | String | 필수 | 일정 제목|
 | content | String | 선택 | 일정 상세 내용|
 
@@ -81,7 +81,7 @@
 |---|---|---|---|
 | page|Integer| 선택  | 페이지 번호  |
 |size | Integer| 선택 | 한 페이지 당 표시되는 일정 개수|
-| createAt | DateTime | 선택 | 수정 날짜 |
+| createAt | String | 선택 | 수정 날짜 |
 | username | String | 선택 | 일정 작성자 이름|
 
 **Response**
@@ -164,8 +164,8 @@
 |---|---|---|---|
 | scheduleId|Integer| 필수  | 일정 고유 번호  | 
 |  username | String  | 필수  |  일정 작성자 이름 |
-|  createAt | DateTime  | 필수  | 작성 날짜  |
-| updateAt | DateTime | 필수 | 수정 날짜 |
+|  createAt | String  | 필수  | 작성 날짜  |
+| updateAt | String | 필수 | 수정 날짜 |
 | title | String | 필수 | 일정 제목|
 | content | String | 선택 | 일정 상세 내용|
 
@@ -197,7 +197,7 @@
 | scheduleId|Integer| 필수  | 일정 고유 번호  |
 | password  | String  | 필수  | 일정 비밀 번호  | 
 |  username | String  | 필수  |  일정 작성자 이름 |
-| updateAt | DateTime | 필수 | 수정 날짜 |
+| updateAt | String | 필수 | 수정 날짜 |
 | title | String | 필수 | 일정 제목|
 | content | String | 선택 | 일정 상세 내용|
 
