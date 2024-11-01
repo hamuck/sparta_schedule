@@ -26,11 +26,8 @@
 
 ```json
 {
-"scheduleId" : "1",
-"schedulePassword" : "비밀번호",
+"password" : "비밀번호",
 "username" : "작성자 명",
-"createAt": "2024-10-24T14:55:00Z",
-"updateAt": "2024-10-25T09:30:00Z",
 "title" : "제목",
 "content" : "내용"
 }
@@ -39,24 +36,22 @@
 
 |  파라미터 |타입   | 필수여부  | 설명  |
 |---|---|---|---|
-| scheduleId|Integer| 필수  | 일정 고유 번호  |
-| schedulePassword  | String  | 필수  | 일정 비밀 번호  | 
+| id|Integer| 필수  | 일정 고유 번호  |
+| password  | String  | 필수  | 일정 비밀 번호  | 
 |  username | String  | 필수  |  일정 작성자 이름 |
-|  createAt | String  | 필수  | 작성 날짜  |
-| updateAt | String | 필수 | 수정 날짜 |
 | title | String | 필수 | 일정 제목|
 | content | String | 선택 | 일정 상세 내용|
 
 **Response**
 ```json
 {
-"scheduleId" : "1"
+"id" : "1"
 }
 ```
 
 |  파라미터 |타입   | 필수여부  | 설명  |
 |---|---|---|---|
-| scheduleId|Integer| 필수  | 일정 고유 번호  |
+| id|Integer| 필수  | 일정 고유 번호  |
 
 
 ---
@@ -99,9 +94,9 @@
 |  totalPage | Integer  | 필수  |  전체 페이지 수 |
 |  totalCount | Integer  | 필수  | 전체 포스트 수  |
 | data | Integer | 필수 | 일정 목록 |
-| schedulId | Integer | 필수 | 일정 고유 번호|
+| id | Integer | 필수 | 일정 고유 번호|
 | title | String | 필수 | 일정 제목|
-|content| String | 필수 | 일정 상세 내용|
+|content| String | 선택 | 일정 상세 내용|
 
 
 ---
@@ -109,26 +104,20 @@
 ## 선택 일정 조회
 선택한 일정의 상세 내역을 조회합니다.
 
-**Request**
-```json
-{
-"scheduleId" : "1"
-}
-```
-
 |메서드|요청 URL|
 |---|---|
 |GET|http://{SERVER_URL}/api/schedules/{scheduleId}|
 
-|  파라미터 |타입   | 필수여부  | 설명  |
-|---|---|---|---|
-| scheduleId|Integer| 필수  | 일정 고유 번호  |
+**Request**
+
+- Request 없음
+
 
 **Response**
 
 ```json
 {
-"scheduleId" : "1",
+"id" : "1",
 "username" : "작성자 명",
 "createAt": "2024-10-24T14:55:00Z",
 "updateAt": "2024-10-25T09:30:00Z",
@@ -139,7 +128,7 @@
 
 |  파라미터 |타입   | 필수여부  | 설명  |
 |---|---|---|---|
-| scheduleId|Integer| 필수  | 일정 고유 번호  | 
+| id|Integer| 필수  | 일정 고유 번호  | 
 |  username | String  | 필수  |  일정 작성자 이름 |
 |  createAt | String  | 필수  | 작성 날짜  |
 | updateAt | String | 필수 | 수정 날짜 |
@@ -155,10 +144,8 @@
 
 ```json
 {
-"scheduleId" : "1",
-"schedulePassword" : "비밀번호",
+"password" : "비밀번호",
 "username" : "작성자 명",
-"updateAt": "2024-10-25T09:30:00Z",
 "title" : "제목",
 "content" : "내용"
 }
@@ -171,23 +158,21 @@
 
 |  파라미터 |타입   | 필수여부  | 설명  |
 |---|---|---|---|
-| scheduleId|Integer| 필수  | 일정 고유 번호  |
-| schedulePassword  | String  | 필수  | 일정 비밀 번호  | 
+| password  | String  | 필수  | 일정 비밀 번호  | 
 |  username | String  | 필수  |  일정 작성자 이름 |
-| updateAt | String | 필수 | 수정 날짜 |
 | title | String | 필수 | 일정 제목|
 | content | String | 선택 | 일정 상세 내용|
 
 **Response**
 ```json
 {
-"scheduleId" : "1"
+"id" : "1"
 }
 ```
 
 |  파라미터 |타입   | 필수여부  | 설명  |
 |---|---|---|---|
-| scheduleId|Integer| 필수  | 일정 고유 번호  |
+| id|Integer| 필수  | 일정 고유 번호  |
 
 
 ---
@@ -199,8 +184,7 @@
 
 ```json
 {
-"scheduleId" : "1",
-"schedulePassword" : "비밀번호"
+"password" : "비밀번호"
 }
 ```
 
@@ -211,13 +195,13 @@
 
 |  파라미터 |타입   | 필수여부  | 설명  |
 |---|---|---|---|
-| scheduleId|Integer| 필수  | 일정 고유 번호  |
-| schedulePassword  | String  | 필수  | 일정 비밀 번호  | 
+| password  | String  | 필수  | 일정 비밀 번호  | 
 
 ---
 
 # ERD
 
-![스크린샷 2024-10-31 오전 10 42 18](https://github.com/user-attachments/assets/febcf2a7-e59c-4ea4-a4b6-01d57cc86672)
+![스크린샷 2024-11-01 오전 10 36 41](https://github.com/user-attachments/assets/47b24f10-7a35-4a50-bc0b-332e97364e39)
+
 
 
