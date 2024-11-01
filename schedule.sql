@@ -1,3 +1,9 @@
+CREATE TABLE User(
+    userId integer not null primary key,
+    username varchar(50) not null,
+    usermail varchar(50)
+);
+
 CREATE TABLE Schedule(
     scheduleId integer not null primary key,
     userId integer not null foreign key,
@@ -6,12 +12,6 @@ CREATE TABLE Schedule(
     updateAt datetime not null,
     title varchar(100) not null,
     content varchar(500)
-);
-
-CREATE TABLE User(
-    userId integer not null primary key,
-    username varchar(50) not null,
-    usermail varchar(50)
 );
 
 INSERT INTO Schedule(
