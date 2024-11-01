@@ -8,7 +8,7 @@
 |  기능 |Method   | URL  | request  | response|상태코드  |
 |---|---|---|---|---|---|
 | 일정 생성(등록)|POST| /api/schedules  |요청 body   | 등록정보  | 200: 정상 등록, 400: 등록 실패 |
-| 일정 목록 조회  | GET  |/api/schedules  | 요청 param  |  다건 응답 정보 |200: 정상 조회 |
+| 일정 목록 조회  | GET  |/api/schedules  | -  |  다건 응답 정보 |200: 정상 조회 |
 |  선택 일정 조회 | GET  |/api/schedules/{scheduleId}   |  요청 param | 단건 응답 정보  | 200: 정상 조회, 404: 존재하지 않는 일정|
 | 선택 일정 수정  | PUT  | /api/schedules/{scheduleId}  | 요청 body  | 수정 정보  | 200: 정상 수정, 400: 조회 실패, 404: 존재하지 않는 일정|
 |  선택 일정 삭제 | DELETE  | /api/schedules/{scheduleId}  | 요청 param  | -  | 200: 정상 삭제|
